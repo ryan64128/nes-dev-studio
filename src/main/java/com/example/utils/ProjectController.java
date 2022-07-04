@@ -33,7 +33,7 @@ public class ProjectController {
 		//Project p = new Project("default-project", patterns, nameTables, palettes);
 		Gson gson = new GsonBuilder().setPrettyPrinting().create();
 		String fileString = gson.toJson(p);
-		//System.out.println(fileString);
+		System.out.println(fileString);
 		
 		try (PrintWriter out = new PrintWriter(new FileWriter(pathName))) {
             out.write(fileString);
